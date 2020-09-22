@@ -47,7 +47,7 @@ function DrawioEditor(id, filename, type, interactive, updateHeight, updateWidth
  
     this.iframe = $('<iframe>', {
         //src: 'https://www.draw.io/?embed=1&proto=json&spin=1&analytics=0&db=0&gapi=0&od=0&picker=0',
-	src: 'https://embed.diagrams.net/?embed=1&ui=atlas&spin=1&modified=unsavedChanges&proto=json',
+	src: 'https://embed.diagrams.net/?embed=1&proto=json&spin=1',
 	id: 'drawio-iframe-' + id,
 	class: 'DrawioEditorIframe'
     })
