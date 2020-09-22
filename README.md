@@ -27,7 +27,7 @@ This is a MediaWiki extension that integrates the draw.io flow chart editor and 
 1. Clone this plugin into a folder named DrawioEditor within your wiki's extensions folder:
    ```shell
    cd /where/your/wiki/is/extensions
-   git clone https://github.com/mgeb/mediawiki-drawio-editor DrawioEditor
+   git clone https://github.com/MichaelStrasser88/DrawioEditor.git DrawioEditor
    ```
 
 2. Activate the plugin in LocalSettings.php:
