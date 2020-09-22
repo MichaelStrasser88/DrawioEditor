@@ -102,7 +102,8 @@ DrawioEditor.prototype.updateImage = function (imageinfo) {
 }
 
 DrawioEditor.prototype.sendMsgToIframe = function(data) {
-    this.iframeWindow.postMessage(JSON.stringify(data), 'https://www.draw.io');
+    //this.iframeWindow.postMessage(JSON.stringify(data), 'https://www.draw.io');
+	this.iframeWindow.postMessage(JSON.stringify(data), 'https://app.diagrams.net');
 }
 
 DrawioEditor.prototype.showDialog = function(title, message) {
@@ -305,7 +306,8 @@ window.editDrawio = function(id, filename, type, updateHeight, updateWidth, upda
 
 function drawioHandleMessage(e) {
     // we only act on event coming from draw.io iframes
-    if (e.origin != 'https://www.draw.io')
+    //if (e.origin != 'https://www.draw.io')
+	if (e.origin != 'https://app.diagrams.net')
         return;
     
     if (!editor)
